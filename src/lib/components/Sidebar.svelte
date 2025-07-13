@@ -10,9 +10,9 @@
 
 	{#if $showTips}
 		<div class="text-sm space-y-2">
-			<p>🧠 Use anchors like ^ and $ to narrow results.</p>
-			<p>🧪 Combine filters like ^a.* to focus your search.</p>
-			<p>🔍 Your goal is to reduce matches using smart regex.</p>
+			<p>- Use anchors like ^ and $ to narrow results.</p>
+			<p>- Combine filters like ^a.* to focus your search.</p>
+			<p>- Your goal is to reduce matches using smart regex.</p>
 		</div>
 	{:else}
 		<div class="text-sm space-y-1">
