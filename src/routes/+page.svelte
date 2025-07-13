@@ -5,9 +5,9 @@
   import FlavorSwitch from '$lib/components/FlavorSwitch.svelte';
 </script>
 
-<div class="min-h-screen bg-[#FFFCF2] text-black flex flex-col md:flex-row font-mono">
+<div class="min-h-screen bg-[#FFFCF2] text-black flex flex-col md:flex-row font-mono transition-all duration-300">
   <div class="flex-1 p-6 space-y-6 max-w-full md:max-w-2xl mx-auto">
-    <div class="flex items-center justify-between border-4 border-black p-4">
+    <div class="flex items-center justify-between border-4 border-black p-4 hover:scale-[1.01] transition-transform duration-300">
       <h1 class="text-3xl font-bold">Regex Wordle Solver</h1>
       <FlavorSwitch />
     </div>
