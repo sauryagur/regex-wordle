@@ -2,17 +2,17 @@
 	import { showTips, flavor } from '$lib/stores';
 </script>
 
-<div class="hidden md:block w-full md:w-80 p-6 border-l border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900">
+<div class="hidden md:block w-full md:w-80 p-6 border-l-4 border-black bg-[#FFF2D7]">
 	<label class="block mb-4">
 		<input type="checkbox" bind:checked={$showTips} class="mr-2" />
-		Show Tips
+		<span class="font-bold">Show Tips</span>
 	</label>
 
 	{#if $showTips}
 		<div class="text-sm space-y-2">
-			<p>- Use anchors like ^ and $ to narrow results.</p>
-			<p>- Combine filters like ^a.* to focus your search.</p>
-			<p>- Your goal is to reduce matches using smart regex.</p>
+			<p><strong>🧠</strong> Use anchors like ^ and $ to narrow results.</p>
+			<p><strong>🧪</strong> Combine filters like ^a.* to focus your search.</p>
+			<p><strong>🔍</strong> Your goal is to reduce matches using smart regex.</p>
 		</div>
 	{:else}
 		<div class="text-sm space-y-1">
