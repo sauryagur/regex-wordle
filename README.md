@@ -1,38 +1,25 @@
-# sv
+# Regex Wordle Solver
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A minimal, regex-powered Wordle solver built with SvelteKit and Tailwind CSS.
 
-## Creating a project
+This was originally a joke project created as a way to experiment with SvelteKit and to cheat on Discord Wordle games with my friends using
+regular expressions. The app allows users to filter a curated word list using stacked regex queries in real time.
 
-If you're seeing this, you've probably already done this step. Congrats!
+![img.png](.github/assets/images/img.png)
+![img_1.png](.github/assets/images/img_1.png)
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Usage
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun install
+bun dev
 ```
 
-## Building
+1. Enter one or more regex patterns to filter the Wordle wordlist
+2. Use anchors like `^`, `$`, and wildcard characters to refine your match
+3. Combine filters to quickly zero in on the correct word
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Future work
+- PCRE support
+- A game that lets you learn regex by playing Wordle
